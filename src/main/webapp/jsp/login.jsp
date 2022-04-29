@@ -24,10 +24,10 @@
             <div class="signup nodisplay">
                 <h1>注册</h1>
                 <form autocomplete="off">
-                    <input type="text" placeholder="用户名">
-                    <input type="email" placeholder="邮箱">
-                    <input type="password" placeholder="密码">
-                    <input type="password" placeholder="确认密码">
+                    <input type="text" placeholder="用户名" name="username">
+                    <input type="email" placeholder="邮箱" name="email">
+                    <input type="password" placeholder="密码" name="password">
+                    <input type="password" placeholder="确认密码" name="confirm_password">
                     <button class="button submit">创建账号 </button>
                 </form>
             </div>

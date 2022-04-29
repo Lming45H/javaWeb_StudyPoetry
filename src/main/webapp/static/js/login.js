@@ -23,5 +23,5 @@ function isLogin(){
     }
 }
 function register(){
-
+    $("")
 }
