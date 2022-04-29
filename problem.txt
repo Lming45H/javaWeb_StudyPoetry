@@ -1,0 +1,16 @@
+流程：
+    登录业务：前端表单传递数据到servlet,servlet到后端印证后成功则重定向页面不携带数据
+            印证失败则携带数据请求转发到前端，前端通过jstl获取java传递的对象并进行弹窗显示
+
+
+    请求转发：/是代表webapp
+    req.getRequestDispatcher("/jsp/login.jsp").forward(req,resp);
+
+    重定向：req.getContextPath()是webapp
+    resp.sendRedirect(req.getContextPath()+"/jsp/poetry.jsp");
+
+    前端页面要使用地址需使用 相对地址：${pageContext.request.contextPath}/xxx
+
+    使用jstl标签要加：
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    还要加两个依赖 jstl standard
